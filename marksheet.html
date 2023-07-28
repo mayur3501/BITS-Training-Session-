@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Result System</title>
+   <link rel="stylesheet" href="marksheet.css">
+   <script src="marksheet.js"></script>
+</head>
+<body>
+<div class="container">
+   <h1>Marksheet</h1>
+   <table>
+      <tr>
+         <td><label for="Subject1">Subject 1:</label></td>
+         <td><input type="number" id="Subject1" name="Subject1" placeholder="Enter marks"></td>
+      </tr>
+      <tr>
+         <td><label for="Subject2">Subject 2:</label></td>
+         <td><input type="number" id="Subject2" name="Subject2" placeholder="Enter marks"></td>
+      </tr>
+      <tr>
+         <td><label for="Subject3">Subject 3:</label></td>
+         <td><input type="number" id="Subject3" name="Subject3" placeholder="Enter marks"></td>
+      </tr>
+   </table>
+   <br>
+   <button onclick="calculatePercentage()">Percentage</button>
+   <label for="Percentage">Percentage :</label>
+   <input type="number" readonly id="Percentage"><br><br>
+   <button onclick="calculateGrade()">Grade</button>
+   <label for="Grade">Grade :</label>
+   <input type="text" readonly id="Grade">
+   <div id="result"></div>
+</div>
+</body>
+</html>

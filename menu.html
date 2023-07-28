@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sam Hotel</title>
+    <script src="menu.js"></script>
+   <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+<h1>Sam veg and NonVeg hotel</h1>
+<h2>"once you taste the food,you will fall in love with sam hotel</h2>
+
+<label for="sabji">Choose a Sabji</label>
+<select name="sabji" id="sabji" onchange="sabjiRate()">
+    <option value="Select">Select sabji</option>
+    <option value="Chiken Malwani">Chiken Malwani</option>
+    <option value="Chiken Masala">Chiken Masala</option>
+    <option value="Veg Maratha">Veg Maratha</option>
+    <option value="Panner Masala">Panner Masala</option>
+</select>
+
+<div id="Rate">Rate</div>
+
+<label for="Quantity">Quantity</label>
+<input type="number" id="Quantity" onchange="calculateAmount()">
+
+<label for="Amount">Amount</label>
+<input type="number" id="Amount" readonly>
+
+</body>
+</html>
